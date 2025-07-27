@@ -1,7 +1,7 @@
 const Url = require('../models/Url');
 const { nanoid } = require('nanoid');
 
-const BASE_URL = 'http://localhost:3000'; // update this to use actual base URL during production
+const BASE_URL = 'http://localhost:6000'; // update this to use actual base URL during production
 
 exports.shortenUrl = async (req, res) => {
     console.log("📥 Received Body:", req.body);
