@@ -24,4 +24,6 @@ const urlSchema = new mongoose.Schema({
   }
 });
 
+urlSchema.index({ expiresAt: 1 }, { expireAfterSeconds: 0 }); // Automatically delete expired URLs
+
 module.exports = mongoose.model('Url', urlSchema);
