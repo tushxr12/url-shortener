@@ -18,7 +18,7 @@ Built with **React** for the frontend, **Node.js + Express** for the backend, an
 
 ## 🛠 Tech Stack
 
-**Frontend:** React.js, Tailwind CSS, Axios  
+**Frontend:** React.js, Tailwind CSS, Fetch API  
 **Backend:** Node.js, Express.js, MongoDB, Mongoose  
 **Deployment:** Vercel (Frontend), Render (Backend)  
 **Utilities:** nanoid (short code generation), dotenv  
