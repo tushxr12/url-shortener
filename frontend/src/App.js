@@ -3,6 +3,9 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { BackgroundLines } from "./components/ui/background-lines";
 
+// Use the environment variable for base URL
+const BASE_URL = process.env.REACT_APP_BASE_URL;
+
 function App() {
   const [originalUrl, setOriginalUrl] = useState("");
   const [shortUrl, setShortUrl] = useState("");
@@ -11,7 +14,7 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:3001/shorten", {
+      const response = await fetch(`${BASE_URL}/shorten`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
